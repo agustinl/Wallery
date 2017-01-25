@@ -1,0 +1,193 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="distribution" content="global"/>
+
+		<title>Wallery — Murales gratuitos, contenidos valiosos</title>
+
+		<meta name="description" content=""/>
+		<meta name="keywords" content=""/>
+		<meta name="author" content=""/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		
+		<link type="text/plain" rel="author" href="humans.txt" />
+
+		<!-- Open Graphs Tag's -->
+		<meta property="og:title" content=""/>
+		<meta property="og:site_name" content=""/>
+		<meta property="og:image" content="" />
+		<meta property="og:image:secure_url" content="" />
+		<meta property="og:image:type" content="image/jpeg" />
+		<meta property="og:image:width" content="400" />
+		<meta property="og:image:height" content="300" />
+		<meta property="og:description" content=""/>
+		<meta property="og:url" content=""/>
+
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css"/>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700&amp;subset=latin-ext" rel="stylesheet"> 
+		<link rel="stylesheet" href="css/croppic.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+		<link rel="stylesheet" type="text/less" href="css/main.less"/>
+		<script src="js/vendor/less.min.js"></script>
+
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lt IE 10]><script src="js/old/respond.min.js"></script><![endif]-->
+
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+	</head>
+	<body>
+		<!--[if lt IE 9]>
+			<p class="browsehappy">La version de su navegador es demasiado antigua. <a href="http://browsehappy.com/">Actualicelo</a> y disfrute el sitio al maximo.</p>
+		<![endif]-->
+
+		<header class="container-fluid">
+			<div class="container">
+				
+				<div class="col-lg-2">
+					<img src="images/logo.png" alt="Wallery">
+				</div>
+
+				<div class="col-lg-8 text-center">
+					<h1>Murales gratuitos, <strong>contenidos valiosos</strong></h1>
+				</div>
+
+				<div class="col-lg-2">
+					<a class="btn btn-default" href="#" role="button">Busqueda avanzada</a>
+				</div>
+
+			</div>
+		</header>
+
+		<section class="container">
+			
+			<div id="uploadform" class="col-lg-8 col-lg-offset-2 row">
+			<div class="row">
+				
+				<div class="col-lg-5 row">
+					<div id="cropContaineroutputUpload"></div>
+					<input type="text" name="tmp_img" id="cropOutput"/>
+				</div>
+
+				<div class="col-lg-7 white-form">
+				<div class="align-middle">
+
+					<div class="form-group row">
+						<div class="col-lg-6">
+					    	<input type="text" class="form-control" name="" placeholder="DNI / LC / LE" data-toggle="tooltip" data-placement="bottom" title="Solo para comprobar que no se haya cargado una solicitud previa.">
+  							<span class="glyphicon glyphicon-question-sign form-control-feedback" aria-hidden="true"></span>
+						</div>
+
+						<div class="col-lg-6">
+					    	<select class="selectpicker" data-width="100%" title="Tipo de sangre">
+							  <option>O negativo</option>
+							  <option>O positivo</option>
+							  <option data-divider="true"></option>
+							  <option>A negativo</option>
+							  <option>A positivo</option>
+							  <option data-divider="true"></option>
+							  <option>B negativo</option>
+							  <option>B positivo</option>
+							  <option data-divider="true"></option>
+							  <option>AB negativo</option>
+							  <option>AB positivo</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<div class="col-lg-8">
+							<input type="text" class="form-control" name="" placeholder="Nombre y apellido">
+						</div>
+
+						<div class="col-lg-4">
+							<input type="text" class="form-control" name="" placeholder="Cantidad" data-toggle="tooltip" data-placement="bottom" title="Dejar en blanco si no hay un numero determinado.">
+  							<span class="glyphicon glyphicon-user form-control-feedback" aria-hidden="true"></span>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p class="text-muted-info">¿Donde donar?</p>
+						<hr>
+						<input id="searchTextField" type="text" class="form-control input-mg" name="" placeholder="Centro medico">
+						<input id="searchTextFieldTwo" type="text" class="form-control input-mg" name="" placeholder="Direccion">
+						<input type="text" class="form-control input-mg" name="" placeholder="Dias y horarios">
+					</div>
+
+					<div class="form-group">
+						<textarea class="form-control" placeholder="Informacion adicional..."></textarea>
+					</div>
+
+					<div class="form-group row">
+						<div class="col-lg-6">
+					    	<input type="text" class="form-control" name="" placeholder="Telefono #1">
+						</div>
+
+						<div class="col-lg-6">
+					    	<input type="text" class="form-control" name="" placeholder="Referencia #1">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<div class="col-lg-6">
+					    	<input type="text" class="form-control" name="" placeholder="Telefono #2">
+						</div>
+
+						<div class="col-lg-6">
+					    	<input type="text" class="form-control" name="" placeholder="Referencia #2">
+						</div>
+					</div>
+
+				</div>
+				</div>
+			
+			</div>
+			</div>
+
+			<div class="col-lg-2 uploadform-buttons">
+			<div>
+				<button class="btn btn-primary" type="submit">Listo</button>
+				<button class="btn btn-link">Cancelar</button>
+			</div>
+			</div>
+
+		</section>
+
+		<footer class="container-fluid">
+
+			<div class="container">
+				<h6>2017 — Buenos Aires, Argentina — <a href="#">hola@wallery.com.ar</a></h6>
+			</div>
+
+		</footer>
+
+		<script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/croppic.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyALeJWJhFIFahkYfCEsPBL5dNMbGfABXRA "></script>
+		<script src="js/scripts.js"></script>
+
+		<script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+		<!--[if lt IE 10]><script src="js/old/rem.min.js"></script><![endif]-->
+	</body>
+</html>
